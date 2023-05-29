@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Bài tập 1: Tính tiền lương nhân viên -->
+      <div class="container">
+        <h1 class="text-black">1.Tính tiền lương nhân viên</h1>
+        <div class="mb-3">
+          <label for="" class="form-label">Số ngày làm: </label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soNgay"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Lương mỗi ngày: </label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="luongNgay"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+        </div>
+        <button class="btn btn-danger my-2" id="tinhLuong">Tính lương</button>
+        <div
+          id="xuatKetquaLuong"
+          class="bg-success bg-opacity-75 text-white p-3 rounded-4 w-20"
+        ></div>
+      </div>
+
+      <!-- Bài tập 2: Tính giá trị trung bình -->
+      <div class="container">
+        <h1>2.Tính giá trị trung bình</h1>
+
+        <div class="d-flex gap-2">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num1"
+              placeholder="Number 1"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num2"
+              placeholder="Number 2"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num3"
+              placeholder="Number 3"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num4"
+              placeholder="Number 4"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num5"
+              placeholder="Number 5"
+            />
+          </div>
+        </div>
+        <button class="btn btn-danger my-3" id="tinhTB">Tính trung bình</button>
+        <div
+          id="xuatketquaTB"
+          class="bg-success bg-opacity-75 text-white p-3 rounded-4 w-20"
+        ></div>
+      </div>
+    </main>
+
+    <!-- Bài tập 3: Quy đổi tiền -->
+    <div class="container">
+      <h1>3.Bài tập quy đổi tiền USD -> VND</h1>
+      <div class="mb-3">
+        <label for="" class="form-label"
+          >Nhập số tiền cần quy đổi từ USD sang VND</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soTienUSD"
+          aria-describedby="helpId"
+          placeholder=""
+        />
+        <button class="btn btn-danger my-3" id="quyDoiTien">
+          Quy đổi tiền
+        </button>
+        <div
+          id="kqQuyDoiTien"
+          class="bg-success bg-opacity-75 text-white p-3 rounded-4 w-20"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Bài tập 4: tính diện tích, chu vi -->
+    <div class="container">
+      <h1>4.Tính diện tích, chu vi</h1>
+      <div class="d-flex gap-2">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="chieuDai"
+            aria-describedby="helpId"
+            placeholder="Chiều dài"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="chieuRong"
+            aria-describedby="helpId"
+            placeholder="Chiều rộng"
+          />
+        </div>
+      </div>
+      <button class="btn btn-danger my-3" id="tinhToan">Tính toán</button>
+      <div
+        id="xuatDienTichChuVi"
+        class="bg-success bg-opacity-75 text-white p-3 rounded-4 w-20"
+      ></div>
+    </div>
+
+    <!-- Bài tập 5: tính tổng 2 kí số -->
+    <div class="container">
+      <h1>5.Tính tổng 2 kí số</h1>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soLieu"
+          aria-describedby="helpId"
+          placeholder="Nhập số có 2 chữ số"
+        />
+      </div>
+      <button class="btn btn-danger my-3" id="tinhkyso">Tính kí số</button>
+      <div
+        id="xuatKiso"
+        class="bg-success bg-opacity-75 text-white p-3 rounded-4 w-20"
+      ></div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
